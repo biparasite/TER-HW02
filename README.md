@@ -61,7 +61,7 @@
 
 main.tf
 
-```json
+```bash
 data "yandex_compute_image" "ubuntu" {
   family = var.vm_web_image
 }
@@ -69,7 +69,7 @@ data "yandex_compute_image" "ubuntu" {
 
 variables.tf
 
-```json
+```bash
 variable "vm_web_image" {
   type        = string
   default     = "ubuntu-2004-lts"
@@ -85,7 +85,7 @@ variable "vm_web_image" {
 
 main.tf
 
-```json
+```bash
 resource "yandex_compute_instance" "platform" {
   name        = var.vm_web_name
   platform_id = var.vm_web_platform
@@ -98,7 +98,7 @@ resource "yandex_compute_instance" "platform" {
 
 variables.tf
 
-```json
+```bash
 variable "vm_web_name" {
   type        = string
   default     = "netology-develop-platform-web"
