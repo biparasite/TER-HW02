@@ -1,6 +1,4 @@
 ###cloud vars
-
-
 variable "cloud_id" {
   type        = string
   description = "cloud-asv"
@@ -55,10 +53,23 @@ variable "vm_web_image" {
 }
   
 
+variable "vms_resources" {
+  type = map(any)
+  description = "VM resourses map"
+
+}
+
+variable "metadata" {
+  type = map(string)
+  description = "SSH key map"
+
+}
+
 ###ssh vars
 
-variable "vms_ssh_root_key" {
+/* variable "vms_ssh_root_key" {
   type        = string
   default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGFWU0VOTdkuWCe0B0iYaGAc5RuCNXX+bjdY5cB/vHer biparasite@Alexey.local"
   description = "ssh-keygen -t ed25519"
 }
+ */

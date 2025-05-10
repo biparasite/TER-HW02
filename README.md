@@ -236,3 +236,5 @@ metadata = {
 4. Проверьте terraform plan. Изменений быть не должно.
 
 ### Ответ
+
+![task6](https://github.com/biparasite/TER-HW02/blob/main/task_6.1.png "task6")
