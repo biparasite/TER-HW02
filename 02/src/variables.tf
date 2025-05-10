@@ -30,42 +30,30 @@ variable "vpc_name" {
   description = "VPC network ru-central1-a & 10.0.1.0/24"
 }
 
+### netology-develop-platform-db
+variable "ru-central1-b_zone" {
+  type        = string
+  default     = "ru-central1-b"
+  description = "ru-central1-b-net-asv"
+}
+variable "ru-central1-b_default_cidr" {
+  type        = list(string)
+  default     = ["10.0.2.0/24"]
+  description = "default_cidr ru-central1-b"
+}
+
+variable "vm_db_vpc_name" {
+  type        = string
+  default     = "netology-develop-platform-db"
+  description = "VPC network ru-central1-b & 10.0.2.0/24"
+}
+
 variable "vm_web_image" {
   type        = string
   default     = "ubuntu-2004-lts"
   description = "VM OS image"
 }
   
-
-variable "vm_web_name" {
-  type        = string
-  default     = "netology-develop-platform-web"
-  description = "VM name"
-}
-
-variable "vm_web_platform" {
-  type        = string
-  default     = "standard-v1"
-  description = "VM platform"
-}
-
-variable "vm_web_core" {
-  type        = number
-  default     = "2"
-  description = "VM platform cpu"
-}
-
-variable "vm_web_memory" {
-  type        = number
-  default     = "1"
-  description = "VM platform memory"
-}
-
-variable "vm_web_core_fraction" {
-  type        = number
-  default     = "5"
-  description = "VM platform core_fraction"
-}
 
 ###ssh vars
 

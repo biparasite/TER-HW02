@@ -132,3 +132,13 @@ variable "vm_web_core_fraction" {
  </details>
 
 ---
+
+## Задание 3
+
+1. Создайте в корне проекта файл 'vms_platform.tf' . Перенесите в него все переменные первой ВМ.
+2. Скопируйте блок ресурса и создайте с его помощью вторую ВМ в файле main.tf: "netology-develop-platform-db" , cores = 2, memory = 2, core*fraction = 20. Объявите её переменные с префиксом vm_db* в том же файле ('vms_platform.tf'). ВМ должна работать в зоне "ru-central1-b"
+3. Примените изменения.
+
+### Ответ
+
+![task3](https://github.com/biparasite/TER-HW02/blob/main/task_3.1.png "task3")
